@@ -8,11 +8,6 @@ def create_app():
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(Config)
 
-    try:
-        os.makedirs(app.instance_path)
-    except OSError:
-        pass
-
     from .blueprints import (
         home,
         menu,

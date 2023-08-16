@@ -1,6 +1,6 @@
-from app.secret import Secret
+# from app.secret import Secret
 
 
-class Config(Secret):
+class Config:
     DEBUG = True
     DEVELOPMENT = True
